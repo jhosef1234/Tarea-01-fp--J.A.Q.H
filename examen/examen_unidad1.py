@@ -1,9 +1,9 @@
 def ejercicio1 ():
     #Definir variables
     ExCon:float()
-    e:float()
-    p:float()
-    t:float()
+    E:float()
+    P:float()
+    T:float()
     EnPer:float()
     test:float()
     total:float()
@@ -13,10 +13,10 @@ def ejercicio1 ():
     EnPer=float(input("Ingrese la nota de la entrevista personal(0-20): "))
     test=float(input("Ingrese la nota del test psicologico(0-20): "))
     #Proceso
-    e=ExCon*0.4
-    t=test*0.25
-    p=EnPer*0.35
-    total=e+p+t
+    E=ExCon*0.4
+    T=test*0.25
+    P=EnPer*0.35
+    total=E+P+T
     if total>20:
         mensaje=("Introdusca nuevamente los datos")
     elif total>=17:
@@ -197,23 +197,23 @@ def ejercicio5 ():
         print(f"El total a pagar es: {preFi}")
     else:
         #Definir variables
-        exCon:float()
-        e:float()
-        p:float()
-        t:float()
-        enPer:float()
+        ExCon:float()
+        E:float()
+        P:float()
+        T:float()
+        EnPer:float()
         test:float()
         total:float()
         mensaje:str()
         #Datos de entrada
-        exCon=float(input("Ingrese la nota de su examen: "))
-        enPer=float(input("Ingrese la nota de entrevista personal: "))
+        ExCon=float(input("Ingrese la nota de su examen: "))
+        EnPer=float(input("Ingrese la nota de entrevista personal: "))
         test=float(input("Ingrese la nota del test psicologico: "))
         #Proceso
-        e=exCon*0.4
-        t=test*0.25
-        p=enPer*0.35
-        total=e+p+t
+        E=ExCon*0.4
+        T=test*0.25
+        P=EnPer*0.35
+        total=E+P+T
         if total>20:
             mensaje=("Introdusca nuevamente los datos")
         elif total>=17:
