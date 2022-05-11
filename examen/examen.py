@@ -197,22 +197,22 @@ def ejercicio5 ():
         print(f"El total a pagar es: {preFi}")
     else:
         #Definir variables
-        exCon:float()
+        ExCon:float()
         e:float()
         p:float()
         t:float()
-        enPer:float()
+        EnPer:float()
         test:float()
         total:float()
         mensaje:str()
         #Datos de entrada
-        exCon=float(input("Ingrese la nota de su examen: "))
-        enPer=float(input("Ingrese la nota de entrevista personal: "))
+        ExCon=float(input("Ingrese la nota de su examen: "))
+        EnPer=float(input("Ingrese la nota de entrevista personal: "))
         test=float(input("Ingrese la nota del test psicologico: "))
         #Proceso
-        e=exCon*0.4
+        e=ExCon*0.4
         t=test*0.25
-        p=enPer*0.35
+        p=EnPer*0.35
         total=e+p+t
         if total>20:
             mensaje=("Introdusca nuevamente los datos")
