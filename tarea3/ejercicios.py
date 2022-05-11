@@ -3,7 +3,7 @@ def ejercicio_31 ():
     edad:int
     mensaje:str
     #Datos de Entrada
-    edad=int(input("Ingrese su edad:"))
+    edad=int(input("Ingrese su edad :"))
     #Proceso y Datos de Salida
     if edad>=18:
         mensaje=(f"Puede votar porque su edad es {edad}")
@@ -229,4 +229,4 @@ def ejercicio_310():
         mensaje=("No puede viajar F")
     #Datos de salida
     print(mensaje)
-ejercicio_33()
+ejercicio_310()
