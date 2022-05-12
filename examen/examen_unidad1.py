@@ -1,3 +1,4 @@
+
 def ejercicio1 ():
     #Definir variables
     ExCon:float()
