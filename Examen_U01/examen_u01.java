@@ -3,7 +3,7 @@ package Examen_U01;
 import java.util.Scanner;
 
 /**
- * ReforzamientoU1
+ * ExamenU1
  */
 public class examen_u01 {
     //examen unidad 01-jhosef anthony quispe huarilloclla
@@ -24,11 +24,11 @@ public class examen_u01 {
         promedio=EC*0.4+EP*0.25+TP*0.35;
         /* >=17 y <=20 Se encuentra en el nivel 4; <17 y >=14 Se encuentra en el nivel 3; <14 y >=11 Se encuentra en el nivel 2; <11 Pierde  la vacante y se encontraria en el nivel 1; */
         if (promedio>=17 && promedio<=20) {
-            estado="\n\nAprobo \n\tSe encuentra en el nivel 4";
+            estado="\n\nAprobo \n\tSe encuentra en el nivel 4 y alcansa una vacante";
         }else if(promedio<17 && promedio>=14){
-            estado="\n\nAprobo \n\tSe encuentra en el nivel 3";
+            estado="\n\nAprobo \n\tSe encuentra en el nivel 3 y alcansa una vacante";
         }else if(promedio<14 && promedio>=11){
-            estado="\n\nAprobo \n\tSe encuentra en el nivel 2";
+            estado="\n\nAprobo \n\tSe encuentra en el nivel 2 y alcansa una vacante";
         }else if(promedio<11){
             estado="\n\nDesaprobo y pierde la vacante \n\tSe encuentra en el nivel 1";
         }else{
@@ -36,35 +36,97 @@ public class examen_u01 {
         }
         //Datos de salida
         System.out.println(estado);
-    }
-    
+    } 
     public static void pregunta2JAQH() {
         //Definir variables
         double precio, descuento, igv, total, PF;
-        String estado;
         //Datos de entrada
         System.out.println("Ingrese el precio del articulo: ");
         precio=leerTeclado.nextDouble();
         //Proceso
+        if (precio>=2000){
+            descuento=precio*0.10;
+        }else if (precio>1000 && precio<2000){
+            descuento=precio*0.05;
+        }else if (precio>=500 && precio<1000){
+            descuento=precio*0.02;
+        }else{
+            descuento=precio*0;
+        }
         total=precio-descuento;
         igv=total*0.18;
         PF=total+igv;
-        if (precio>=2000){
-            estado=precio*0.10;
-        }else if (precio>1000 && precio<2000){
-            estado=precio*0.05;
-        }else if (precio>=500 && precio<1000){
-            estado=precio*0.02;
-        }else{
-            estado=precio*0;
-        }
         //Datos de salida
-        System.out.println(igv);
-        System.out.println(estado);
-        System.out.println(PF);
+        System.out.println("El igv total es: "+igv);
+        System.out.println("El descuento total es :"+descuento);
+        System.out.println("El total a pagar es :");
     }
     public static void pregunta3JAQH() {
+        //Definir variables
+        double num1, num2, resultado; 
+        String signo;
+        //Datos de entrada
+        System.out.println("ingrese el primer numero");
+        num1=leerTeclado.nextDouble();
+        System.out.println("ingrese el segundo numero");
+        num2=leerTeclado.nextDouble();
+        System.out.println("+=suma \n-=resta \n*=multiplicacion \n/=division \nR=raiz \n^=potencia \n%=modulo de 2 \ningrese el signo: ");
+        signo=leerTeclado.next();
+        //Proceso
+        if (signo=="+") {
+            resultado=num1+num2;
+        } else if (signo=="-") {
+            resultado=num1+num2;
+        }else if (signo=="*") {
+            resultado=num1*num2;
+        }else if (signo=="/") {
+            resultado=num1/num2;
+        }else if (signo=="R") {
+            Math.pow(num1,0.5);   
+        }else if (signo=="^") {
+            Math.pow(num1,num2);
+        }else{
+            resultado=num1%num2;
+        }
+        //Datos de salida
+        System.out.println("el resusltado es: "+resultado);
+    }
+    public static void pregunta4JAQH() {
+        //Definir variables
+        double anho;
+        String mensaje, genero;
+        //Datos de entrada
+        System.out.println("ingrese la cantidad de años: ");
+        anho=leerTeclado.nextDouble();
+        System.out.println("ingrese el genero (masculino o femenino): ");
+        genero=leerTeclado.next();
+        //Proceso
+        if (anho>=70) {
+            mensaje=("su vauna es de tipo C");
+        }else if (anho>=16 && anho<=69 && genero=="masculino") {
+            mensaje=("su vacuna es de tipo A");
+        }else if (anho>=16 && anho<=69 && genero=="femenino") {
+            mensaje=("su vacuna es de tipo B");
+        }else{
+            mensaje=("vacuna de tipo A");
+        }
+        //Datos de salida
+        System.out.println(mensaje);
+    }
+    public static void main(String[] args) {
+        //Definir variable
+        int numero;
+        System.out.println("ingrese el numero del ejercicio que desa ejecutar");
+        numero=leerTeclado.nextInt();
+        switch (numero) {
+            case 1:pregunta1JAQH(); break;
+            case 2:pregunta2JAQH(); break;
+            case 3:pregunta3JAQH(); break;
+            case 4:pregunta4JAQH(); break;
+        
+            default: break;
+        }
         
     }
-    }
 }
+
