@@ -1,5 +1,7 @@
 package clase_7;
 
+import java.util.Scanner;
+
 public class clase_7 {
     
     public static void imprimirWhileN1_20() {
@@ -21,7 +23,15 @@ public class clase_7 {
             System.out.println(numInit);
         }
     }
-    
+    public static void nombrevertical() {
+        Scanner lt=new Scanner(System.in);
+        System.out.println("igrese su nombre: ");
+        String nombre=lt.next();
+        for (int i = nombre.length()-1; i>=0; i--) {
+            System.out.println(nombre.charAt(i));
+        }
+        
+    }
 
 
 
@@ -29,5 +39,6 @@ public class clase_7 {
         System.out.println("imprime while:"); imprimirWhileN1_20();
         System.out.println("imprime Do while:"); imprimirDoWhileN1_20();
         System.out.println("imprime for"); imprimirForN1_20();
+        System.out.println("imprime nombrevertical"); nombrevertical();
     }
 }
