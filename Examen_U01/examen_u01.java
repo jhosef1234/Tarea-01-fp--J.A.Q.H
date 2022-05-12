@@ -63,27 +63,26 @@ public class examen_u01 {
     }
     public static void pregunta3JAQH() {
         //Definir variables
-        double num1, num2, total; 
-        String signo;
+        double num1, num2, total,signo; 
         //Datos de entrada
         System.out.println("ingrese el primer numero");
         num1=leerTeclado.nextDouble();
         System.out.println("ingrese el segundo numero");
         num2=leerTeclado.nextDouble();
-        System.out.println("+=suma \n-=resta \n*=multiplicacion \n/=division \nR=raiz \n^=potencia \n%=modulo de 2 \ningrese el signo: ");
-        signo=leerTeclado.next();
+        System.out.println("1 = (+=suma) \n2 = (-=resta) \n3 = (*=multiplicacion) \n4 = (/=division) \n5 = (R=raiz) \n6 = (^=potencia) \n7 = (%=modulo de 2) \ningrese el signo: ");
+        signo=leerTeclado.nextDouble();
         //Proceso
-        if (signo=="+") {
+        if (signo==1) {
             total=num1+num2;
-        }else if (signo=="-") {
-            total=num1+num2;
-        }else if (signo=="*") {
+        }else if (signo==2) {
+            total=num1-num2;
+        }else if (signo==3) {
             total=num1*num2;
-        }else if (signo=="/") {
+        }else if (signo==4) {
             total=num1/num2;
-        }else if (signo=="R") {
+        }else if (signo==5) {
             total=Math.pow(num1,0.5);   
-        }else if (signo=="^") {
+        }else if (signo==6) {
             total=Math.pow(num1,num2);
         }else{
             total=num1%num2;
