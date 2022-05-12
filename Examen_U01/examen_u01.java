@@ -59,11 +59,11 @@ public class examen_u01 {
         //Datos de salida
         System.out.println("El igv total es: "+igv);
         System.out.println("El descuento total es :"+descuento);
-        System.out.println("El total a pagar es :");
+        System.out.println("El total a pagar es :"+PF);
     }
     public static void pregunta3JAQH() {
         //Definir variables
-        double num1, num2, resultado; 
+        double num1, num2, total; 
         String signo;
         //Datos de entrada
         System.out.println("ingrese el primer numero");
@@ -74,22 +74,22 @@ public class examen_u01 {
         signo=leerTeclado.next();
         //Proceso
         if (signo=="+") {
-            resultado=num1+num2;
-        } else if (signo=="-") {
-            resultado=num1+num2;
+            total=num1+num2;
+        }else if (signo=="-") {
+            total=num1+num2;
         }else if (signo=="*") {
-            resultado=num1*num2;
+            total=num1*num2;
         }else if (signo=="/") {
-            resultado=num1/num2;
+            total=num1/num2;
         }else if (signo=="R") {
-            Math.pow(num1,0.5);   
+            total=Math.pow(num1,0.5);   
         }else if (signo=="^") {
-            Math.pow(num1,num2);
+            total=Math.pow(num1,num2);
         }else{
-            resultado=num1%num2;
+            total=num1%num2;
         }
         //Datos de salida
-        System.out.println("el resusltado es: "+resultado);
+        System.out.println("el resusltado es: "+total);
     }
     public static void pregunta4JAQH() {
         //Definir variables
