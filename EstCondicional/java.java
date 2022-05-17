@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Java
  */
-public class Java {
+public class java {
 
     static Scanner teclado=new Scanner(System.in); 
 

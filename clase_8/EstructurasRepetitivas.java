@@ -74,9 +74,34 @@ public class EstructurasRepetitivas {
         System.out.println("Total de numeros introducidos: "+(cantNumMayorcero+cantNumMenorIgualCero));
 
     }
+    public static void impuestoVehiculo418() {
+        //Definir variables
+        String cateV="";
+        int cantidad=0;
+        double costV=0,impUnit=0, impToltal=0, totalImpV=0;
+        //Datos de entrada y proceso y salida
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Ingrese Cantidad Vehiculos de Categoria "+ (i+1)+": ");
+            cantidad=lt.nextInt();
+            System.out.println("ingrese el precio de la categoria " +(i+1)+":");
+            costV=lt.nextDouble();
+            if(i==0){
+                impUnit=costV*0.10;
+            }else if(i==1){
+                impUnit=costV*0.07;
+            }else{
+                impUnit=costV*0.05;
+            }
+            impToltal=impUnit*cantidad;
+            System.out.println("Impuesto de Categoria "+(i+1)+" es:"+impUnit);
+            System.out.println("Impuesto Total de Categoria "+(i+1)+" es:"+impToltal);
+            totalImpV=totalImpV+impToltal;
+        }
+        System.out.println("Impuesto Total de los vehiculos es :"+totalImpV);
+    }
     public static void sumarlosnumerosparesentre1al20() {
         //Definir Variables
-        
+
     }
 
 
@@ -90,6 +115,7 @@ public class EstructurasRepetitivas {
             case 1:suma10Cantidades41(); break;
             case 2:focosColores44(); break;
             case 3:numMayoresCeroMenores47(); break;
+            case 4:impuestoVehiculo418(); break;
         
             default:break;
         }
