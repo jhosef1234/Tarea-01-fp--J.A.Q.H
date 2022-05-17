@@ -74,6 +74,10 @@ public class EstructurasRepetitivas {
         System.out.println("Total de numeros introducidos: "+(cantNumMayorcero+cantNumMenorIgualCero));
 
     }
+    public static void sumarlosnumerosparesentre1al20() {
+        //Definir Variables
+        
+    }
 
 
 
