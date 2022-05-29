@@ -239,12 +239,24 @@ public class tarea_4 {
     public static void ejercicio413() {
         
     }
-    
-    
-    
-    
     public static void main(String[] args) {
-        ejercicio43();
-    }
-    
+        //Definir Variable
+        int numero;
+        System.out.println("ingrese el numero del ejercicio que desee ejecutar");
+        numero=lt.nextInt();
+        switch (numero) {
+            case 1:ejercicio41(); break;
+            case 2:ejercicio42(); break;
+            case 3:ejercicio43(); break;
+            case 4:ejercicio45(); break;
+            case 5:ejercicio46(); break;
+            case 6:ejercicio48(); break;
+            case 7:ejercicio49(); break;
+            case 8:ejercicio411(); break;
+            case 9:ejercicio412(); break;
+            case 10:ejercicio413(); break;
+
+            default: break;
+        }
+    }  
 }
