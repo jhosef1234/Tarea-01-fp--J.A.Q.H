@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class tarea_4 {
     static Scanner lt=new Scanner(System.in);
-    public static void ejercicio41() {
+    public static void ejercicio41JAQH() {
         //Definir variables
         double total=1500;
         //Proceso
@@ -13,7 +13,7 @@ public class tarea_4 {
             System.out.println("Su salario el "+(i+1)+" año sera de:"+total);
         }
     }
-    public static void ejercicio42() {
+    public static void ejercicio42JAQH() {
         //Definir variables
         int n,tarjeta,hamburguesa;
         double total=0;
@@ -38,7 +38,7 @@ public class tarea_4 {
             default: break;
         }
     }
-    public static void ejercicio43() {
+    public static void ejercicio43JAQH() {
         //Definir variables
         int conta0=0,contaMas=0,contaMenos=0, n,num;
         //Datos de entrada
@@ -59,7 +59,7 @@ public class tarea_4 {
         System.out.println("La cantidad de numeros mayor a 0 es: "+contaMas);
         System.out.println("La cantidad de numeros menor a 0 es: "+contaMenos);
     }
-    public static void ejercicio45() {
+    public static void ejercicio45JAQH() {
         //Definir variables
         int n;
         //Datos de entrada
@@ -84,7 +84,7 @@ public class tarea_4 {
                 break;
         }
     }
-    public static void ejercicio46() {
+    public static void ejercicio46JAQH() {
         //Definir variables
         int v;
         //Datos de entrada
@@ -119,7 +119,7 @@ public class tarea_4 {
             default:break;
         }
     }
-    public static void ejercicio48() {
+    public static void ejercicio48JAQH() {
         //Definir variables
         int años;
         double saldo=0, interes=0, total=0, deposito=0;
@@ -143,7 +143,7 @@ public class tarea_4 {
         System.out.println("Tu ahorro ya con interes es: "+total);
         System.out.println("");
     }
-    public static void ejercicio49() {
+    public static void ejercicio49JAQH() {
         //Definir datos
         int n,salones,edad,suma=0,total=0,alumnos=0;
         //Datos de entrada
@@ -165,7 +165,7 @@ public class tarea_4 {
         }
         System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
     }
-    public static void ejercicio411() {
+    public static void ejercicio411JAQH() {
          //Definir Variables
          int cantidad;
          double tipo, total=0;
@@ -205,7 +205,7 @@ public class tarea_4 {
          //Datos de salida
          System.out.println("El dinero total es: "+total);
     }
-    public static void ejercicio412() {
+    public static void ejercicio412JAQH() {
         //Definir variables
         int n,venta;
         double a=0,b=0,c=0,total=0,total1=0,total2=0,total3=0;
@@ -236,26 +236,22 @@ public class tarea_4 {
 	    System.out.println("El total de las ventas menores a $10,000: "+total3);
 	    System.out.println("El monto total de la ventas es: $"+total);
     }
-    public static void ejercicio413() {
-        
-    }
     public static void main(String[] args) {
         //Definir Variable
         int numero;
         System.out.println("ingrese el numero del ejercicio que desee ejecutar");
         numero=lt.nextInt();
         switch (numero) {
-            case 1:ejercicio41(); break;
-            case 2:ejercicio42(); break;
-            case 3:ejercicio43(); break;
-            case 4:ejercicio45(); break;
-            case 5:ejercicio46(); break;
-            case 6:ejercicio48(); break;
-            case 7:ejercicio49(); break;
-            case 8:ejercicio411(); break;
-            case 9:ejercicio412(); break;
-            case 10:ejercicio413(); break;
-
+            case 1:ejercicio41JAQH(); break;
+            case 2:ejercicio42JAQH(); break;
+            case 3:ejercicio43JAQH(); break;
+            case 4:ejercicio45JAQH(); break;
+            case 5:ejercicio46JAQH(); break;
+            case 6:ejercicio48JAQH(); break;
+            case 7:ejercicio49JAQH(); break;
+            case 8:ejercicio411JAQH(); break;
+            case 9:ejercicio412JAQH(); break;
+            
             default: break;
         }
     }  
