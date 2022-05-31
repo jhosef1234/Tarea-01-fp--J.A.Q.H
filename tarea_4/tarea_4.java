@@ -91,7 +91,7 @@ public class tarea_4 {
         System.out.println("Ingrese el proceso deseado \n1.-While \n2.-For");
         v=lt.nextInt();
         switch (v) {
-            case 1:ejercicio42(); break;
+            case 1:ejercicio42JAQH(); break;
             case 2://Definir variables
                 int i=0,n,tarjeta,hamburguesa;
                 double total=0;
