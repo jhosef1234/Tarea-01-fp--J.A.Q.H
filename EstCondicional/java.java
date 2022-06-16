@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Java
- */
 public class java {
 
     static Scanner teclado=new Scanner(System.in); 

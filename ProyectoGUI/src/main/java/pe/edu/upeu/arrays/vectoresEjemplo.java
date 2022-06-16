@@ -1,5 +1,7 @@
 package pe.edu.upeu.arrays;
 
+import java.util.Scanner;
+
 import pe.edu.upeu.modelo.persona;
 
 /**
@@ -24,15 +26,39 @@ public class vectoresEjemplo {
         System.out.println("Indice 4:"+edadesX[4]);
     }
 
-    public void vectorObjetos() {
+    /*public void vectorObjetos() {
         persona[] p=new persona[27];
-        p[0].codigo="202211720";
-    }
+        p[0]=new persona("43631917", "David", false);
+        p[26]=new persona("202211720", "jhosef", false);
+        System.out.println(p[26].nombres);
+
+        persona[] pp={
+            new persona("202012374", "Alejo Castillo Cristhian Brandonlyn	", true),
+            new persona("202212437", "ARCE MAYTA EFRAIN NAYDER	", true),
+            new persona("202212436", "ARCE MAYTA Daniel	", true),
+            new persona("202212435", "ARCE MAYTA Michael	", true),
+            new persona("202212434", "ARCE MAYTA Yesenia	", true),
+        };
+        Scanner sc=new Scanner(System.in);
+        for (int i = 0; i < pp.length; i++) {
+            System.out.print(pp[i].codigo+"\t"+pp[i].nombres+"\t");
+            System.out.println("presente");
+            pp[i].asistencia=sc.nextBoolean();
+            System.out.println("");
+            
+        }
+
+        System.out.println("***************Registro Asistencia**********");
+        for (int i = 0; i < pp.length; i++) {
+            System.out.println(pp[i].codigo+"\t"+pp[i].nombres+"\t"+pp[i].asistencia);
+        }
+        
+    } */
 
     public static void main(String[] args) {
         vectoresEjemplo objx=new vectoresEjemplo();
         objx.vectoresX();
-
+        //objx.vectorObjetos();
         //new vectoresEjemplo().vectoresX();
     }
 }

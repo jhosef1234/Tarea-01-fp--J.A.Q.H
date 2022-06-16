@@ -2,8 +2,8 @@ package pe.edu.upeu.modelo;
 
 public class persona {
     public String codigo;
-    String nombres;
-    boolean asistencia;
+    public String nombres;
+    public boolean asistencia;
 
     persona(String codigo, String nombre, boolean asistencia){
         this.codigo=codigo;
