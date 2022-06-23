@@ -6,6 +6,7 @@ public class Transformadas {
     Scanner cs=new Scanner(System.in);
 
     public void transformada01() {
+        
         System.out.println("ingrese dimension de matriz:");
         int dimension=cs.nextInt();
         System.out.println("ingrese valor inicial:");
@@ -19,6 +20,21 @@ public class Transformadas {
             }  
         }
         imprimirMatriz(matriz); 
+    }
+
+    public void Transformada17() {
+
+        System.out.println("ingrese dimension de matriz:");
+        int dimension=cs.nextInt();
+        System.out.println("ingrese valor inicial:");
+        int valor=cs.nextInt();
+        String[][]matriz=new String[dimension][dimension];
+        for (int f = 0; f < matriz.length; f++) {
+            for (int c = 0; i < matriz.length; i++) {
+                
+            }
+        }
+        
     }
 
     public void imprimirMatriz(String[][] m) {
