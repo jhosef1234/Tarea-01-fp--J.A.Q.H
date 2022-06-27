@@ -12,5 +12,6 @@ public class App
     {
         System.out.println( "Hello World!" );
         new MainGUI();
+        new MenuOpciones().login();
     }
 }
