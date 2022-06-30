@@ -30,7 +30,7 @@ public class Transformadas {
         int valor=cs.nextInt();
         String[][]matriz=new String[dimension][dimension];
         for (int f = 0; f < matriz.length; f++) {
-            for (int c = 0; i < matriz.length; i++) {
+            for (int c = 0; c < matriz.length; c++) {
                 
             }
         }
