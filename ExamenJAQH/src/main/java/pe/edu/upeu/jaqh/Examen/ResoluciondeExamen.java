@@ -37,7 +37,7 @@ public class ResoluciondeExamen {
 
     public void ejercicio_3() {
         int h = 0;
-        System.out.print("Introduce la altura (debe ser impar y mayor o igual de 3): ");
+        System.out.print("Introduce la altura (recuerda que debe de ser un numero mayor a 3 e impar): ");
         h = leerT.nextInt();
         if (h % 2 == 1 && h >= 3) {
             for (int fil = 1; fil <= h; fil++) {
@@ -51,13 +51,13 @@ public class ResoluciondeExamen {
                 System.out.println();
             }
         } else {
-            System.out.println("ERROR: Numero no aceptado");
+            System.out.println("vuelva a intentarlo");
         }
     }
 
     public void ejercicio_4() {
         int i, j, suma, sec = 0;
-        System.out.println("Ingrese cuantos numeros perfectos desea ver (dentro del rango): ");
+        System.out.println("Ingrese la cantidad de numeros perfectos que desea ver: ");
         int canti = leerT.nextInt();
         System.out.println("Los numero perfectos son: ");
         for (i = 1; i > 0; i++) {
@@ -84,7 +84,7 @@ public class ResoluciondeExamen {
     public void ejercicio5_1() {
         int n;
         do {
-            System.out.print("Introduzca numero >0: ");
+            System.out.print("Introduzca un numero que sea mayor a cero : ");
             n = leerT.nextInt();
         } while (n < 0);
         System.out.print("Binario: ");
