@@ -3,7 +3,7 @@ package pe.edu.upeu.modelo;
 import lombok.Data;
 
 @Data
-public class VentaTO {
-    String idVenta, dni;
-    double descuento, subprecio, igv, preciototal;
+public class VentaTO {    
+   public String idVenta, dni;
+   public double descuento,subprecio, igv, precioTotal;
 }

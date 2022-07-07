@@ -45,8 +45,8 @@ public class ClienteDao extends AppCrud{
         crearCliente(dni);
 
     }
-   }
-
+   } 
+   
    public boolean noExisteDNI(String dni) {
     leerA=new LeerArchivo(TABLA_CLIENTE);
     Object[][] dataC=buscarContenido(leerA, 0, dni);
