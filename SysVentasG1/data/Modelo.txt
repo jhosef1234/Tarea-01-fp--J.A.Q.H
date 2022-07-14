@@ -1,1 +1,8 @@
-M1	Cuello V
+M1	1/4 de Pollo a la Brasa con papas
+M2	1/8 de Pollo a la Brasa con papas
+M3	Parrillada Familiar
+M4	Pollo Broaster
+M5	Gaseosa de 2L
+M6	Limonada
+M7	Caldo de Gallina
+M8	Helado

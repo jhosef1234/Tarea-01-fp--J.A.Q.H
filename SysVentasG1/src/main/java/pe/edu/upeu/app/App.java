@@ -1,5 +1,6 @@
 package pe.edu.upeu.app;
 
+import pe.edu.upeu.dao.UsuarioDao;
 import pe.edu.upeu.gui.MainGUI;
 
 /**
@@ -11,5 +12,6 @@ public class App {
         //System.out.println("Hello World!");
         //new MainGUI();
         new MenuOpciones().login();
+        //new UsuarioDao().crearUsuario();
     }
 }

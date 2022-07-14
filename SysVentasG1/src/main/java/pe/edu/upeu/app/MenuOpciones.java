@@ -34,7 +34,9 @@ public class MenuOpciones {
     public void menuPrincial() {
         System.out.println("********************Bienvenidos al Sistema de Ventas******************");
         String valorX="1=Registrar Usuario\n"+"2=Registrar Categoria\n"+
-                "3=Registrar cliente\n4=Registrar Modelo\n5=Crear Producto\n6=Ventas";
+                "3=Registrar cliente\n4=Registrar Modelo\n"+
+                "5=Crear Producto\n6=Ventas\n7=Reporte Ventas\n"+
+                "8=Reporte Ventas2\n";
         int opciones=0;
         do {
             switch (opciones) {
@@ -44,6 +46,8 @@ public class MenuOpciones {
                 case 4: new ModeloDao().crearModelo();break;
                 case 5: new ProductoDao().crearProducto();break;
                 case 6: new VentasDao().registroVentaGeneral();break;
+                case 7: new VentasDao().reporteVentas();break;
+                case 8: new VentasDao().reporteVentasRangoFecha();break;
                 default: System.out.println("Opcion erronea!"); break;
             }
             char continuar=leerT.leer("", "Desea continuar? S=si/N=no")
